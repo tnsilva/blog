@@ -17,7 +17,7 @@ const Blog = ({ posts }: PostsProps) => {
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
-            <Link href={`/${post.slug}`}>
+            <Link href={`/post/${post.slug}`}>
               <a>{post.title}</a>
             </Link>
           </li>
