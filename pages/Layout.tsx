@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export const Layout = ({ children }) => {
+interface LayoutProps {
+  children: Node
+}
+export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
