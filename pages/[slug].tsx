@@ -1,6 +1,5 @@
 import getPosts from '../lib/posts'
 import ReactMarkdown from 'react-markdown'
-import { GetStaticProps } from 'next'
 
 interface PostProps {
   title: string
