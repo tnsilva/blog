@@ -35,7 +35,7 @@ export const getStaticProps = async ({ params }: ParamsProps) => {
   const { slug } = params
   const post = posts.find((post) => post.slug === slug)
 
-  return { props: { post } }
+  return { props: post }
 }
 
 export default Post
