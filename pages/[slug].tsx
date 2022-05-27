@@ -1,5 +1,6 @@
 import getPosts from '../lib/posts'
 import ReactMarkdown from 'react-markdown'
+import { GetStaticProps } from 'next'
 
 interface PostProps {
   title: string
@@ -24,8 +25,15 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async ({ params: { slug } }) => {
+interface ParamsProps {
+  params: { slug: string }
+}
+
+export const getStaticProps = async ({ params }: ParamsProps) => {
+  console.log(params)
   const posts = await getPosts()
+
+  const { slug } = params
   const post = posts.find((post) => post.slug === slug)
 
   return { props: post }
