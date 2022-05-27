@@ -6,7 +6,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const posts = await getPosts()
 
   const fields = posts.map(({ slug }) => ({
-    loc: `https://blogtn.vercel.app/post/${slug}`,
+    loc: `https://blogtn.vercel.app/${slug}`,
     lastmod: new Date().toISOString(),
     // changefreq
     // priority
