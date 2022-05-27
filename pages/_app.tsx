@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Layout } from './Layout'
+import Layout from './Layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

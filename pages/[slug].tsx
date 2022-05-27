@@ -30,7 +30,6 @@ interface ParamsProps {
 }
 
 export const getStaticProps = async ({ params }: ParamsProps) => {
-  console.log(params)
   const posts = await getPosts()
 
   const { slug } = params
