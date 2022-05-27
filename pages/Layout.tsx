@@ -11,6 +11,10 @@ interface LayoutProps {
        <Head>
          <title>Meu blog</title>
          <link rel="icon" href="/favicon.ico" />
+         <meta
+           name="google-site-verification"
+           content="_iCBtcDxhy2qQKdErYKcTaafdZ8LdzvalyqhxwOy0kM"
+         />
        </Head>
 
        <header className="bg-gradient-to-r from-blue-500 to-blue-500 py-2 text-center">
