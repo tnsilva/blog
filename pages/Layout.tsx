@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 interface LayoutProps {
-  children: Node
+  children: React.ReactNode
 }
 export const Layout = ({ children }: LayoutProps) => {
   return (
